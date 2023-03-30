@@ -10,8 +10,9 @@ pipeline {
             steps {
                script {
                  withDockerRegistry(credentialsId: 'docker-hubs', url: 'https://index.docker.io/v1/') {
-                    sh 'docker build -t EdricPhan/nodejs-test:v10 .'
-                    sh 'docker push -t EdricPhan/nodejs-test:v10'                   
+                    sh 'docker build -t edricphan/test-app:1.0.0 .'
+                    sh 'docker push -t edricphan/test-app:1.0.0 .'
+                                     
                 }
                }
             }
