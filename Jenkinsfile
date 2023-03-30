@@ -13,6 +13,7 @@ pipeline {
                     sh 'docker build -t EdricPhan/docker-node:v10 .'
                     sh 'docker push -t EdricPhan/docker-node:v10'                   
             }
+            }
         }
        
     }
