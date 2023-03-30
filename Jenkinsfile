@@ -11,7 +11,7 @@ pipeline {
                script {
                  withDockerRegistry(credentialsId: 'docker-hubs', url: 'https://index.docker.io/v1/') {
                     sh 'docker build -t edricphan/test-app:1.0.0 .'
-                    sh 'docker push -t edricphan/test-app:1.0.0 .'
+                    sh 'docker push edricphan/test-app:1.0.0'
                                      
                 }
                }
